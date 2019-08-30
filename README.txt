@@ -1,14 +1,23 @@
 A freeCodeCamp Front End Libraries project: Build a Pomodoro Clock fulfilling the following user stories:
 
+Completed:
+
+
 #1: I can see an element with id="break-label" that contains a string (e.g. "Break Length").
 
 #2: I can see an element with id="session-label" that contains a string (e.g. "Session Length").
 
-
-
 #3: I can see two clickable elements with corresponding IDs: id="break-decrement" and id="session-decrement".
 
 #4: I can see two clickable elements with corresponding IDs: id="break-increment" and id="session-increment".
+
+#9: I can see a clickable element with a corresponding id="start_stop".
+
+#10: I can see a clickable element with a corresponding id="reset".
+
+
+To do:
+
 
 #5: I can see an element with a corresponding id="break-length", which by default (on load) displays a value of 5.
 
@@ -17,10 +26,6 @@ A freeCodeCamp Front End Libraries project: Build a Pomodoro Clock fulfilling th
 #7: I can see an element with a corresponding id="timer-label", that contains a string indicating a session is initialized (e.g. "Session").
 
 #8: I can see an element with corresponding id="time-left". NOTE: Paused or running, the value in this field should always be displayed in mm:ss format (i.e. 25:00).
-
-#9: I can see a clickable element with a corresponding id="start_stop".
-
-#10: I can see a clickable element with a corresponding id="reset".
 
 #11: When I click the element with the id of reset, any running timer should be stopped, the value within id="break-length" should return to 5, the value within id="session-length" should return to 25, and the element with id="time-left" should reset to it's default state.
 
@@ -57,4 +62,3 @@ A freeCodeCamp Front End Libraries project: Build a Pomodoro Clock fulfilling th
 #27: The audio element with id="beep" must be 1 second or longer.
 
 #28: The audio element with id of beep must stop playing and be rewound to the beginning when the element with the id of reset is clicked.
-

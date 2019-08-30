@@ -1,3 +1,8 @@
+#body {
+	margin: 0 auto;
+	width: 60%;
+}
+
 #break-label {
 	font-size: 15px;
 }

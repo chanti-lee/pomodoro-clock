@@ -1,22 +1,49 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<!-- Bootstrap -->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+		<!-- Popper JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
 		<link rel="stylesheet" href="style.css">
+		<title>Pomodoro Clock</title>
 	</head>
 	<body>
-		<p id = "break-label">
-			Break Length
-		</p>
-		<p id = "session-label">
-			Session Length
-		</p>
+		<div class = "container">
+			<h1 id="title"> Pomodoro Clock</h1>
+			<div class = "container">
+				<p id = "break-label">
+					Break Length
+				</p>
+				<button type="button" id="break-increment" class="increment">+</button>
+				<button type="button" id="break-decrement" class="decrement">-</button>
+			</div>
 
-		<button type="button" id="break-increment" class="increment">Break + </button>
-		<button type="button" id="session-increment" class="increment">Session + </button>
+			<div class = "container">
+				<p id = "session-label">
+					Session Length
+				</p>
+				<button type="button" id="session-increment" class="increment">+</button>
+				<button type="button" id="session-decrement" class="decrement">-</button>
+			</div>
 
-		<button type="button" id="break-decrement" class="decrement">Break - </button>
-		<button type="button" id="session-decrement" class="decrement">Session - </button>
+			<div class = "container">
+				<button type="button" id="start_stop">Start</button>
+				<button type="button" id="break" class="decrement">Break</button>
+			</div>
+
+		</div>
 
 	</body>
 </html>
