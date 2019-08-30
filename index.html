@@ -22,23 +22,26 @@
 	<body>
 		<div class = "container">
 			<h1 id="title"> Pomodoro Clock</h1>
-			<div class = "container">
-				<p id = "break-label">
-					Break Length
-				</p>
-				<button type="button" id="break-increment" class="increment">+</button>
-				<button type="button" id="break-decrement" class="decrement">-</button>
+			<div class="row">
+				<div class = "col" id = "break-length">
+					<p id = "break-label">
+						Break Length
+					</p>
+					<button type="button" id="break-increment" class="increment">+</button>
+					<button type="button" id="break-decrement" class="decrement">-</button>
+				</div>
+
+				<div class = "col" id = "session-length">
+					<p id = "session-label">
+						Session Length
+					</p>
+					<button type="button" id="session-increment" class="increment">+</button>
+					<button type="button" id="session-decrement" class="decrement">-</button>
+				</div>
+
 			</div>
 
-			<div class = "container">
-				<p id = "session-label">
-					Session Length
-				</p>
-				<button type="button" id="session-increment" class="increment">+</button>
-				<button type="button" id="session-decrement" class="decrement">-</button>
-			</div>
-
-			<div class = "container">
+			<div class = "container" id = "timer">
 				<button type="button" id="start_stop">Start</button>
 				<button type="button" id="break" class="decrement">Break</button>
 			</div>
