@@ -24,22 +24,20 @@
 			<h1 id="title"> Pomodoro Clock</h1>
 			<div class="row">
 				<div class = "col" id = "break-length">
-					<p id = "break-label">
+					<h3 id = "break-label">
 						Break Length
-					</p>
+					</h3>
 					<div id="break-time">
-						5
 					</div>
 					<button type="button" id="break-increment" class="increment">+</button>
 					<button type="button" id="break-decrement" class="decrement">-</button>
 				</div>
 
 				<div class = "col" id = "session-length">
-					<p id = "session-label">
+					<h3 id = "session-label">
 						Session Length
-					</p>
+					</h3>
 					<div id="session-time">
-						25
 					</div>
 					<button type="button" id="session-increment" class="increment">+</button>
 					<button type="button" id="session-decrement" class="decrement">-</button>
@@ -48,14 +46,18 @@
 			</div>
 
 			<div class = "container" id = "timer">
-				<div id="countdown">
+				<h2 id="timer-label">
+					Session
+				</h2>
+				<div id="time-left">
 					25:00
 				</div>
 				<button type="button" id="start_stop">Start</button>
-				<button type="button" id="break" class="decrement">Break</button>
+				<button type="button" id="reset" >Reset</button>
 			</div>
 
 		</div>
 
+        <script src="script.js"></script>
 	</body>
 </html>

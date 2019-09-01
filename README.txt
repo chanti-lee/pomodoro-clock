@@ -11,14 +11,6 @@ Completed:
 
 #4: I can see two clickable elements with corresponding IDs: id="break-increment" and id="session-increment".
 
-#9: I can see a clickable element with a corresponding id="start_stop".
-
-#10: I can see a clickable element with a corresponding id="reset".
-
-
-To do:
-
-
 #5: I can see an element with a corresponding id="break-length", which by default (on load) displays a value of 5.
 
 #6: I can see an element with a corresponding id="session-length", which by default displays a value of 25.
@@ -26,6 +18,15 @@ To do:
 #7: I can see an element with a corresponding id="timer-label", that contains a string indicating a session is initialized (e.g. "Session").
 
 #8: I can see an element with corresponding id="time-left". NOTE: Paused or running, the value in this field should always be displayed in mm:ss format (i.e. 25:00).
+
+#9: I can see a clickable element with a corresponding id="start_stop".
+
+#10: I can see a clickable element with a corresponding id="reset".
+
+
+
+
+To do:
 
 #11: When I click the element with the id of reset, any running timer should be stopped, the value within id="break-length" should return to 5, the value within id="session-length" should return to 25, and the element with id="time-left" should reset to it's default state.
 
