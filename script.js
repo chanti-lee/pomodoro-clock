@@ -14,11 +14,12 @@ function init() {
 }
 
 
+function increment() {
+    
+}
 
-
-
-
-var reset = document.getElementById("reset");
-reset.onclick = resetTimer();
+function decrement() {
+    
+}
 
 window.onload = init;
