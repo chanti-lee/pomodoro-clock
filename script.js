@@ -13,13 +13,22 @@ function init() {
 
 }
 
-
-function increment() {
-    
+function increment(clicked_id) {
+    if (this.id.) {
+        sessionTime += 1;
+    }
+    else {
+        breakTime += 1;
+    }
 }
 
-function decrement() {
-    
+function decrement(clicked_id) {
+    if ((this.id).includes("session")) {
+        sessionTime -= 1;
+    }
+    else {
+        breakTime -= 1;
+    }
 }
 
 window.onload = init;

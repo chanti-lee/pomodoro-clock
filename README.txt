@@ -24,8 +24,6 @@ Completed:
 #10: I can see a clickable element with a corresponding id="reset".
 
 
-
-
 To do:
 
 #11: When I click the element with the id of reset, any running timer should be stopped, the value within id="break-length" should return to 5, the value within id="session-length" should return to 25, and the element with id="time-left" should reset to it's default state.
