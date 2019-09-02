@@ -23,11 +23,6 @@ Completed:
 
 #10: I can see a clickable element with a corresponding id="reset".
 
-
-To do:
-
-#11: When I click the element with the id of reset, any running timer should be stopped, the value within id="break-length" should return to 5, the value within id="session-length" should return to 25, and the element with id="time-left" should reset to it's default state.
-
 #12: When I click the element with the id of break-decrement, the value within id="break-length" decrements by a value of 1, and I can see the updated value.
 
 #13: When I click the element with the id of break-increment, the value within id="break-length" increments by a value of 1, and I can see the updated value.
@@ -39,6 +34,11 @@ To do:
 #16: I should not be able to set a session or break length to <= 0.
 
 #17: I should not be able to set a session or break length to > 60.
+
+
+To do:
+
+#11: When I click the element with the id of reset, any running timer should be stopped, the value within id="break-length" should return to 5, the value within id="session-length" should return to 25, and the element with id="time-left" should reset to it's default state.
 
 #18: When I first click the element with id="start_stop", the timer should begin running from the value currently displayed in id="session-length", even if the value has been incremented or decremented from the original value of 25.
 
