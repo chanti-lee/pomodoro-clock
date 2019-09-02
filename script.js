@@ -30,9 +30,22 @@ function decrement(clicked_id) {
     }
 }
 
-//start timer
+//start and stop timer
 
-//stop timer
+function startStop() {
+    timer.state = "running";
+    while ((timer.state == "running") && document.getElementById("time-left").innerHTML != "00:00") {
+        window.setInterval(updateTimeLeft(), 1000);
+        document.getElementById("time-left").onclick = stopTimer();
+    }
+}
+
+function updateTimeLeft(){
+}
+
+function stopTimer() {
+    timer.state = "stopped";
+}
 
 function reset() {
     timer.state = "stopped";
@@ -59,7 +72,8 @@ var timer = {
     state: "stopped",
     sessionLength: 25,
     breakLength: 5,
-    timeLeft: 25
+    minLeft: 25,
+    secLeft: 0
 };
 
 //Elements to update
