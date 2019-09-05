@@ -1,7 +1,7 @@
 //Functions
 
 function increment(clicked_id) {
-    if (clicked_id == "session-increment") {
+    if (clicked_id === "session-increment") {
         if (timer.sessionLength < 60) {
             timer.sessionLength += 1;
             document.getElementById("session-time").innerHTML = timer.sessionLength.toString();
@@ -16,7 +16,7 @@ function increment(clicked_id) {
 }
 
 function decrement(clicked_id) {
-    if (clicked_id == "session-decrement") {
+    if (clicked_id === "session-decrement") {
         if (timer.sessionLength > 1) {
             timer.sessionLength -= 1;
             document.getElementById("session-time").innerHTML = timer.sessionLength.toString();
@@ -33,17 +33,31 @@ function decrement(clicked_id) {
 //start and stop timer
 
 function startStop() {
-    timer.state = "running";
-    while ((timer.state == "running") && document.getElementById("time-left").innerHTML != "00:00") {
+    while ((timer.minLeft !== 0) && (timer.secLeft !== 0)) {
+        timer.state = "running";
         window.setInterval(updateTimeLeft(), 1000);
-        document.getElementById("time-left").onclick = stopTimer();
+        document.getElementById("start_stop").addEventListener("click", stopTimer);
     }
 }
 
 function updateTimeLeft(){
+    if (timer.secLeft === 0) {
+        timer.minLeft -= 1;
+        timer.secLeft = 59;
+    }
+    else {
+            timer.secLeft -= 1;
+            if (timer.secLeft < 10) {
+                document.getElementById("time-left").innerHTML = timer.minLeft + ":0" + timer.secLeft;
+                return;
+            }
+        }
+
+    document.getElementById("time-left").innerHTML = timer.minLeft + ":" + timer.secLeft;
 }
 
 function stopTimer() {
+    clearInterval();
     timer.state = "stopped";
 }
 
@@ -58,12 +72,11 @@ function reset() {
 function updateView() {
     breakTime.innerHTML = timer.breakLength;
     sessionTime.innerHTML = timer.sessionLength;
-    timeLeft.innerHTML = timer.timeLeft + ":00";
+    timeLeft.innerHTML = timer.sessionLength + ":00";
 }
 
 function init() {
     updateView();
-
 }
 
 //Timer
