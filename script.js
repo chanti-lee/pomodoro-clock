@@ -5,6 +5,7 @@ function increment(clicked_id) {
         if (timer.sessionLength < 60) {
             timer.sessionLength += 1;
             document.getElementById("session-time").innerHTML = timer.sessionLength.toString();
+            document.getElementById("time-left").innerHTML = timer.sessionLength.toString() + ":00";
         }
     }
     else {
@@ -20,6 +21,7 @@ function decrement(clicked_id) {
         if (timer.sessionLength > 1) {
             timer.sessionLength -= 1;
             document.getElementById("session-time").innerHTML = timer.sessionLength.toString();
+            document.getElementById("time-left").innerHTML = timer.sessionLength.toString() + ":00";
         }
     }
     else {
